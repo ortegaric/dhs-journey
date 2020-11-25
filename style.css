@@ -1,0 +1,68 @@
+/* Seletor descendente que seleciona todos os elementos HTML. Usamos o box-sizing: border-box para somar automaticamente ao conteúdo o espaço da borda e do padding. */
+html * {
+   box-sizing: border-box; 
+}
+
+body {
+    color: #424242;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* Para garantir que a imagem não ultrapasse o tamanho máximo da caixa que está contida. */
+img, iframe {
+    max-width: 100%;
+}
+
+/* Classe que limita o uso horizontal do espaço e mantém o conteúdo centralizado na caixa */
+.container {
+    max-width: 50%;
+    margin: auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+}
+
+#titulo {
+    border-bottom: 4px solid #8C3A1C;
+    background-color: #F2E5BD;
+    font-size: 42px;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 30px 15px;
+    text-shadow: 2px 2px #ccc;
+}
+
+main {
+    padding: 0 30px;
+}
+
+h2 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+#pfooter {
+    border-top: 4px solid #8C3A1C;
+    margin: 0;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+a {
+    color: #8C3A1C;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
